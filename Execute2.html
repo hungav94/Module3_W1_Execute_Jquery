@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Execute 2</title>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                let div = $("div");
+                div.animate({left: '100px'}, "slow");
+                div.animate({fontSize: '100px'}, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<button>Start Animation</button>
+<p>By default, all HTML elements have static position, and cannot be moved. To manipulate the position, remember to first set the CSS</p>
+<div style="background: #98bf21; height: 100px; width: 230px; position: absolute;">Hello</div>
+</body>
+</html>
